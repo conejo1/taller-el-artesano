@@ -1,4 +1,4 @@
-# coding: utf-8
+0# coding: utf-8
 import pilasengine
 
 pilas = pilasengine.iniciar()
@@ -11,9 +11,9 @@ descri = u"""Para calcular el área de un cuadrado lo que se necesita es conocer
 parrafo1 = pilas.actores.Texto(descri, y=160, ancho=400)
 parrafo1.centro_y='arriba'
 
-etiqueta1=pilas.actores.Texto("Lado=",y=60,x=-200)
+etiqueta1=pilas.actores.Texto("Lado=",y=-45,x=-220)
 etiqueta1.centro_x='izquierda'
-entrada=pilas.interfaz.IngresoDeTexto(texto='0',y=60,x=-130,ancho=50)
+entrada=pilas.interfaz.IngresoDeTexto(texto='0',y=-45,x=-130,ancho=50)
 entrada.centro_x='izquierda'
 
 area=0
@@ -24,7 +24,7 @@ def calcular_area():
     asistente.sonreir()
     
 boton=pilas.interfaz.Boton("calcurar")
-boton.y=10
+boton.y=-45
 boton.escala=1.5
 boton.conectar(calcular_area)
 
